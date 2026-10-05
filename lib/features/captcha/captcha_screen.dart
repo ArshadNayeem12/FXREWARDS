@@ -32,10 +32,11 @@ class _CaptchaScreenState extends State<CaptchaScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(20),
-              decoration: BoxDecoration(color: Colors.grey[300], letterSpacing: 5),
-              child: Text(_captchaText, style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, decoration: TextDecoration.lineThrough)),
-            ),
+  padding: const EdgeInsets.all(20),
+  decoration: BoxDecoration(color: Colors.grey[300]),
+  child: Text(_captchaText, style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold, decoration: TextDecoration.lineThrough, letterSpacing: 5.0)),
+),
+
             const SizedBox(height: 20),
             TextField(
               controller: _controller,
